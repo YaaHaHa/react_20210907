@@ -1,6 +1,6 @@
 
-import {INCREMENT,DECREMENT} from './contant'
-export default function countReducer(preState=666,action){
+import {INCREMENT,DECREMENT} from './contents'
+export default function countReducer(preState=0,action){
     // let newState;
     // 从action中获取type和data
     const {type,data} =action;
