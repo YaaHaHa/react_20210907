@@ -17,7 +17,7 @@ import {createincrementAction,
     class Count extends Component {
         increment=()=>{
             const {value} =this.checkNum;
-            // 调用传过来的操作状态的方法
+            // 调用传过来的操作状态的方法，redux是通过store调用dispath，react-redux是通过props调用方法，方法里面再displath。相当于又套了一层
             this.props.jia(value*1);
         }
         decrement=()=>{
